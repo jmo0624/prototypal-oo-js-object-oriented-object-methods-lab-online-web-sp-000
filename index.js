@@ -5,21 +5,21 @@ function BoardMember(name, homeState, training) {
 }
 
 BoardMember.prototype.veto = function(){
-  console.log(`No, I must disagree`);
-}
+  return(`No, I must disagree`);
+};
 
 BoardMember.prototype.approve = function() {
-  console.log(`You can do that!`);
-}
+  return(`You can do that!`);
+};
 
 BoardMember.prototype.doCharity = function() {
-  console.log(`I like to help people`);
-}
+  return(`I like to help people`);
+};
 
 BoardMember.prototype.releasePressStatement = function() {
-  console.log(`You will see great things from Scuber.`);
-}
+  return(`You will see great things from Scuber.`);
+};
 
 BoardMember.prototype.sayHi = function() {
-  console.log(`Hi, my name is ${name}. I am from ${homeState}, and I was trained in ${training}`);
-}
+  return(`Hi, my name is ${name}. I am from ${homeState}, and I was trained in ${training}`);
+};
